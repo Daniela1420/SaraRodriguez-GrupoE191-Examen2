@@ -1,0 +1,24 @@
+<!-- Encabezado -->
+<!-- sara daniela rodriguez rojas grupo 2 -->
+<div class="encabezado">
+  <h1>LISTADO DE POKEMONES</h1>
+</div>
+
+<!-- Buscador -->
+<div class="buscador">
+  <ion-searchbar placeholder="Buscar"></ion-searchbar>
+</div>
+
+<!-- Lista de Pokemones -->
+<div class="lista-pokemones">
+  <ion-card *ngFor="let pokemon of pokemones">
+    <ion-card-header>
+      <ion-card-title>{{ pokemon.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="pokemon.imageUrl" alt="Imagen de {{ pokemon.name }}" class="imagen-pokemon">
+      <p>ID: {{ pokemon.id }}</p>
+    </ion-card-content>
+  </ion-card>
+</div>
+

@@ -1,0 +1,24 @@
+.encabezado {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .buscador {
+    margin: 20px;
+  }
+  
+  .lista-pokemones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  ion-card {
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .imagen-pokemon {
+    width: 100%;
+  }
+  
